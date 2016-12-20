@@ -8,11 +8,12 @@
 }
 
 .menu-container{
-	width: 70%;
+	width: 50%;
 }
 
 .login-menu-container{
 	float: right;
+	width: 200px;
 }
 
 .Menu{
@@ -36,5 +37,26 @@
 		text-decoration: none;
 		display: inline-block;
 		line-height: 80px;
+		color: white;
+		font-size: 20px;
+		font-variant: small-caps;
+
+		&:hover{
+			text-decoration:underline;
+			color: white;
+		}
+	}
+}
+@media (max-width:768px){
+	.Menu{
+		height: auto;
+	}
+
+	.Menu-item{
+		display: block;
+	}
+	
+	.login-menu-container{
+		float: none;
 	}
 }
