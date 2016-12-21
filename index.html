@@ -24,9 +24,108 @@
     			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     				<div class="login-menu-container">
 						<ul class="Menu">
-		    				<li class="Menu-item"><a href="#" class="Menu-link">Login</a></li>
-		    				<li class="Menu-item"><a href="#" class="Menu-link">Register</a></li>
+
+							<li class="Menu-item">
+								<button type="button" class="btn btn-link btn-lg " data-toggle="modal" data-target="#login">
+								  Login
+								</button>
+							</li>
+		    				
+		    				<li class="Menu-item">
+		    					<button type="button" class="btn btn-link btn-lg " data-toggle="modal" data-target="#register">
+		    						Register
+		    					</button>
+		    				</li>
 	    				</ul>
+
+						<!-- Register modal-->
+						<div id="register" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+								<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Login Form</h4>
+									</div>
+									<div class="modal-body">
+										<div class="row">
+											<div class="col-xs-12 form-group">
+												<label for="name" class="col-xs-4" >Name</label>
+												<div class="col-xs-8">
+													<input type="text" id="name" placeholder="Enter name" class="form-control">
+												</div>
+											</div>
+
+											<div class="col-xs-12 form-group">
+												<label for="lname" class="col-xs-4" >Last name</label>
+												<div class="col-xs-8">
+													<input type="text" id="lname" placeholder="Enter lastname" class="form-control">
+												</div>
+											</div>
+
+											<div class="col-xs-12 form-group">
+												<label for="email" class="col-xs-4" >Email</label>
+												<div class="col-xs-8">
+													<input type="text" id="email" placeholder="Enter email" class="form-control">
+												</div>
+											</div>
+
+											<div class="col-xs-12 form-group">
+												<label for="tel" class="col-xs-4" >Phone</label>
+												<div class="col-xs-8">
+													<input type="number" id="tel" placeholder="Enter Phone" class="form-control">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+
+										<div class="btn btn-group pull-right">
+											<button type="button" class="btn btn-success" data-dismiss="modal">Register</button>
+											<button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div><!-- Register End-->
+
+						<div id="login" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+								<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Login Form</h4>
+									</div>
+									<div class="modal-body">
+										<div class="row">
+											<div class="col-xs-12 form-group">
+												<label for="log" class="col-xs-4" >Login</label>
+												<div class="col-xs-8">
+													<input type="text" id="log" class="form-control">
+												</div>
+											</div>
+											<div class="col-xs-12 form-group">
+												<label for="pas" class="col-xs-4" >Password</label>
+												<div class="col-xs-8">
+													<input type="text" id="pas" class="form-control">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+
+										<div class="btn btn-group pull-right">
+											<button type="button" class="btn btn-success" data-dismiss="modal">Login</button>
+											<button class="btn btn-warning" data-dismiss="modal">Register</button>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
 					</div>
     				<div class="menu-container">
     					<ul class="Menu">
